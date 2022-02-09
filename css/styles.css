@@ -1,0 +1,301 @@
+:root {
+   --primary-color: #212121;
+   --secondary-color: #757575;
+   --white-color: #ffffff;
+   --accent-color: #2196f3;
+   --secondary-font-title: 'Raleway', sans-serif;
+   --primary-font-title: 'Roboto', sans-serif;
+   --secondary-background-color: #f5f4fa;
+   --header-footer-background-color: #2f303a;
+}
+body {
+   font-size: 14px;
+   font-weight: 400;
+   font-style: normal;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 0.03em;
+   color: var(--primary-color);
+   background-color: var(--white-color);
+}
+.hidden {
+   display: none;
+}
+.section {
+   padding: 94px 0;
+}
+.container {
+   width: 1200px;
+   margin: 0 auto;
+   border: 1px solid red;
+   padding: 0 15px;
+}
+
+.header-container,
+.page-nav,
+.contacts,
+.nav-links,
+.team-list,
+.what-we-do-list,
+.feature-list,
+.button-filter-list,
+.projects-list {
+   display: flex;
+}
+.header-container {
+   justify-content: space-between;
+}
+
+.logo {
+   font-family: var(--secondary-font-title);
+   font-weight: 700;
+   font-size: 26px;
+   line-height: calc(31 / 26);
+   letter-spacing: 0.03em;
+   color: #2196f3;
+   margin-right: 93px;
+}
+.logo span {
+   color: var(--primary-color);
+}
+.nav-links-item + .nav-links-item {
+   margin-left: 50px;
+}
+.contacts-item:not(:last-child) {
+   margin-right: 50px;
+}
+.nav-links-link,
+.contacts-link {
+   padding: 32px 0;
+   display: block;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: calc(16 / 14);
+   letter-spacing: 0.02em;
+   color: var(--primary-color);
+}
+.contacts-link {
+   color: var(--secondary-color);
+}
+.page-nav {
+   align-items: center;
+}
+.header {
+   background-color: var(--white-color);
+   border-bottom: 1px solid #ececec;
+}
+
+.contacts-link:focus,
+.nav-links-link:hover,
+.contacts-link:hover,
+.nav-links-link:focus,
+.contacts-link-footer:hover,
+.contacts-link-footer:focus {
+   color: var(--accent-color);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+   background: #188ce8;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+}
+.nav-links-item:current {
+   color: var(--accent-color);
+}
+.current-link {
+   color: var(--accent-color);
+}
+
+/* PAGE СТУДИЯ START */
+.modal-btn {
+   font-family: inherit;
+   font-weight: 700;
+   font-size: 16px;
+   font-style: inherit;
+   line-height: 1.88em;
+   letter-spacing: 0.06em;
+   background-color: var(--accent-color);
+   color: var(--white-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   padding: 10px 32px;
+   margin-top: 30px;
+}
+.hero-title {
+   font-size: 44px;
+   font-weight: 900;
+   line-height: 1.36em;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+   color: var(--white-color);
+   margin: auto;
+}
+
+.hero-section {
+   background-color: var(--header-footer-background-color);
+   text-align: center;
+}
+
+.feature-list-item h3 {
+   font-weight: 700;
+   line-height: 1.14;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.contacts-item-footer {
+   margin-bottom: 9px;
+}
+.footer-logo {
+   display: block;
+   margin-bottom: 20px;
+}
+.feature-list-item p {
+   line-height: 1.71em;
+   color: var(--secondary-color);
+}
+.feature-list-item {
+   width: 270px;
+}
+
+.what-we-do-section {
+   background-color: var(--white-color);
+}
+.what-we-do-section h2,
+.team-section h2 {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17em;
+   text-align: center;
+}
+.what-we-do-item {
+   width: 370px;
+   mix-blend-mode: normal;
+}
+.section h2 {
+   margin-bottom: 50px;
+}
+.team-section {
+   background-color: var(--secondary-background-color);
+}
+.team-list-item {
+   background-color: var(--white-color);
+   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+   border-radius: 0px 0px 4px 4px;
+}
+.description-name {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19em;
+   text-align: center;
+   margin-bottom: 10px;
+}
+.description-team {
+   padding: 30px 0;
+}
+.feature-list-item:not(:last-child),
+.what-we-do-item:not(:last-child),
+.team-list-item:not(:last-child) {
+   margin-right: 30px;
+}
+.description-position {
+   font-size: 16px;
+   line-height: 1.19em;
+   text-align: center;
+   color: var(--secondary-color);
+}
+.footer-section {
+   background-color: var(--header-footer-background-color);
+}
+
+.footer-container span {
+   color: var(--white-color);
+}
+.address {
+   text-decoration: none;
+   line-height: 1.71em;
+   margin-top: 20px;
+   color: var(--white-color);
+   font-style: normal;
+}
+.contacts-link-footer {
+   color: rgba(255, 255, 255, 0.6);
+}
+.contacts-item-footer {
+   margin-top: 9px;
+   line-height: 1.71em;
+}
+
+/* PAGE СТУДИЯ FINISH */
+
+/* PAGE ПОРТФОЛИО START */
+.button-filter-item {
+   font-family: inherit;
+   font-style: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63em;
+   align-items: center;
+   text-align: center;
+   border-radius: 4px;
+   letter-spacing: inherit;
+   color: inherit;
+   background: var(--secondary-background-color);
+   border-radius: 4px;
+   height: 38px;
+   padding: 6px 22px;
+   margin: 0 8px 50px 0;
+}
+.button-filter-item + .button-filter-item + .button-filter-item {
+   margin-right: 30px;
+}
+
+.button-filter-item:hover,
+.button-filter-item:focus {
+   color: var(--white-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.description-title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2em;
+   letter-spacing: 0.06em;
+   margin-bottom: 4px;
+}
+.description-subtitle {
+   font-size: 16px;
+   line-height: 1.88em;
+   color: var(--secondary-color);
+}
+.description-projects {
+   padding: 20px 24px;
+}
+.filter-section {
+   background-color: var(--white-color);
+}
+.button-filter-list {
+   justify-content: center;
+}
+.projects-list-item:not(:nth-child(n + 7)) {
+   margin-bottom: 30px;
+}
+.projects-list {
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.description-projects {
+   border: 1px solid #eeeeee;
+   overflow: hidden;
+}
+.filter-container {
+   padding: 0;
+}
+.no-gap {
+   display: block;
+}
+.projects-list-item:not(:nth-child(3n + 3)) {
+   margin-right: 30px;
+}
+
+/* PAGE ПОРТФОЛИО FINISH */
