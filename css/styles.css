@@ -289,11 +289,10 @@ body {
 .projects-list {
    flex-wrap: wrap;
    margin: -15px;
-   border: 1px solid blue;
 }
 .projects-list-item {
    margin: 15px;
-   outline: 1px solid red;
+
    flex-basis: calc(100% / 3 - 30px);
 }
 .description-projects {
