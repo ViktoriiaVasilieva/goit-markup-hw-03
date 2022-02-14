@@ -119,6 +119,7 @@ body {
    border-radius: 4px;
    padding: 10px 32px;
    margin-top: 30px;
+   min-width: 200px;
 }
 .hero-title {
    font-size: 44px;
@@ -284,25 +285,24 @@ body {
 .button-filter-list {
    justify-content: center;
 }
-.projects-list-item:not(:nth-child(n + 7)) {
-   margin-bottom: 30px;
-}
+
 .projects-list {
    flex-wrap: wrap;
-   justify-content: center;
+   margin: -15px;
+   border: 1px solid blue;
+}
+.projects-list-item {
+   margin: 15px;
+   outline: 1px solid red;
+   flex-basis: calc(100% / 3 - 30px);
 }
 .description-projects {
    border: 1px solid #eeeeee;
    overflow: hidden;
 }
-.filter-container {
-   padding: 0;
-}
+
 .no-gap {
    display: block;
-}
-.projects-list-item:not(:nth-child(3n + 3)) {
-   margin-right: 30px;
 }
 
 /* PAGE ПОРТФОЛИО FINISH */

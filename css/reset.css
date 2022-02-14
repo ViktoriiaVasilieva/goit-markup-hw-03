@@ -1,18 +1,12 @@
+html {
+   box-sizing: border-box;
+}
 *,
 *::after,
 *::before {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-   margin-top: 0;
-   margin-bottom: 0;
+   box-sizing: inherit;
 }
 a {
    text-decoration: none;
@@ -24,7 +18,7 @@ input,
 textarea {
    outline: none;
 }
-image {
+img {
    width: 100%;
    height: auto;
    display: block;
